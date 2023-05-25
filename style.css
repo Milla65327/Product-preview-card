@@ -1,0 +1,108 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    display: grid;
+    width: 600px;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.description {
+    background-color: white;
+    padding: 25px 30px 10px 30px;
+
+}
+.image {
+    background-image: url(./images/image-product-desktop.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;   
+}
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+.price {
+    font-family: 'Fraunces', serif;
+    font-size: 2.1em;
+    color: hsl(158, 36%, 37%);
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.price-crossed {
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-top: 20px;
+}
+.btn {
+    margin-top: 35px;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn:hover {
+    background-color: hsl(157, 40%, 22%);
+}
+footer {
+    margin: 100px auto 20px auto;
+    text-align: center;
+    padding: 0;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(158, 36%, 37%);
+}
+
+@media (max-width:599px) {
+    .container {
+        display: block;
+        width: 85%;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
+        margin-top: 10%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .image {
+        background-image: url(./images/image-product-mobile.jpg);
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+    }
+    .btn {
+        margin-bottom: 20px;
+    }
+    footer {
+       margin: 30px auto; 
+    }
+}
